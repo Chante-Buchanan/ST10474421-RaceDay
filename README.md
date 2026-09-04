@@ -4,3 +4,4 @@ CI — Continuous Integration Developers frequently merge their code changes int
 CD — Continuous Delivery / Deployment
 •	Continuous Delivery: every change that passes the automated tests is automatically prepared for release (packaged, ready to deploy), but a human still decides when to actually push it to production.
 •	Continuous Deployment: goes one step further — every change that passes the tests is automatically deployed to production with no manual approval step.
+https://youtu.be/IeXTrviJ8_g
