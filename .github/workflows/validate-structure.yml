@@ -1,0 +1,53 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - develop
+  pull_request:
+    branches:
+      - master
+      - main
+      - develop
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    name: Check Repository Structure
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate /docs folder exists
+        run: |
+          if [ ! -d "docs" ]; then
+            echo "❌ FAILED: /docs folder does not exist"
+            exit 1
+          fi
+          echo "✅ PASSED: /docs folder exists"
+
+      - name: Validate /docs contains minimum 3 files
+        run: |
+          file_count=$(find docs -type f | wc -l)
+          echo "Found $file_count file(s) in /docs"
+          
+          if [ "$file_count" -lt 3 ]; then
+            echo "❌ FAILED: /docs contains only $file_count file(s), minimum 3 required"
+            find docs -type f -exec echo "  - {}" \;
+            exit 1
+          fi
+          echo "✅ PASSED: /docs contains $file_count file(s) (minimum 3 required)"
+          find docs -type f -exec echo "  - {}" \;
+
+      - name: List /docs contents
+        if: always()
+        run: |
+          echo "📁 /docs folder contents:"
+          ls -lah docs/
+
+      - name: Validation Summary
+        if: success()
+        run: echo "🎉 All repository structure validations passed!"
