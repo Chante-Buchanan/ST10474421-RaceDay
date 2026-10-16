@@ -1,0 +1,29 @@
+
+name: RaceDay Build and Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj
+
+      - name: Build
+        run: dotnet build RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj
+
+      - name: Test
+        run: dotnet test RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj
