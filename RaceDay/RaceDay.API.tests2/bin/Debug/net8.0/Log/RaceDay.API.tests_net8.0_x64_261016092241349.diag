@@ -1,0 +1,21 @@
+2026-10-16T09:22:41.3630026+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-16T09:22:41.3651368+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-16T09:22:41.3676315+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-16T09:22:41.3676448+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 09:22:41.313
+2026-10-16T09:22:41.3677673+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 3628
+2026-10-16T09:22:41.3680360+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.31
+2026-10-16T09:22:41.3680484+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.31\System.Private.CoreLib.dll
+2026-10-16T09:22:41.3680792+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-16T09:22:41.3681788+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\27725\source\repos\RaceDay\RaceDay.API.tests2\bin\Debug\net8.0\RaceDay.API.tests.dll
+2026-10-16T09:22:41.3682119+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\27725\source\repos\RaceDay\RaceDay.API.tests2\bin\Debug\net8.0\Log --results-directory C:\Users\27725\source\repos\RaceDay\TestResults --client-port 64561'
+2026-10-16T09:22:41.3707652+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-16T09:22:41.4381161+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-16T09:22:41.4526099+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-16T09:22:41.9510898+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-16T09:22:41.9661361+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 8.0.31)
+2026-10-16T09:22:42.0467561+00:00 xUnit.net INFORMATION   Discovering: RaceDay.API.tests
+2026-10-16T09:22:42.1280260+00:00 xUnit.net INFORMATION   Discovered:  RaceDay.API.tests
+2026-10-16T09:22:42.1686796+00:00 xUnit.net INFORMATION   Starting:    RaceDay.API.tests
+2026-10-16T09:22:44.0459516+00:00 xUnit.net INFORMATION   Finished:    RaceDay.API.tests (ID = '009c5703923ff59a1bbaaee5500d1308c78dbac54cbecdc9bad6a1ebf8443d0b')
+2026-10-16T09:22:44.0578148+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-16T09:22:44.0794224+00:00 xUnit.net INFORMATION    RaceDay.API.tests  Total: 8, Errors: 0, Failed: 0, Skipped: 0, Not Run: 0, Time: 1.890s

@@ -1,0 +1,27 @@
+2026-10-16T09:05:49.2024128+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.5.1+0bf77e3aedbf86f1fa16220bc951d3b52ba56763
+2026-10-16T09:05:49.2041729+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-10-16T09:05:49.2061380+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-10-16T09:05:49.2061460+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 09:05:49.153
+2026-10-16T09:05:49.2062171+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 8900
+2026-10-16T09:05:49.2063739+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.31
+2026-10-16T09:05:49.2063843+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.31\System.Private.CoreLib.dll
+2026-10-16T09:05:49.2064032+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-10-16T09:05:49.2064985+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\27725\source\repos\RaceDay\RaceDay.API.tests2\bin\Debug\net8.0\RaceDay.API.tests.dll
+2026-10-16T09:05:49.2065206+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\27725\source\repos\RaceDay\RaceDay.API.tests2\bin\Debug\net8.0\Log --results-directory C:\Users\27725\source\repos\RaceDay\TestResults --client-port 52148'
+2026-10-16T09:05:49.2084595+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-10-16T09:05:49.2795430+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-10-16T09:05:49.2938471+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-10-16T09:05:49.7162266+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '4.0.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-10-16T09:05:49.7369051+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 8.0.31)
+2026-10-16T09:05:49.8543227+00:00 xUnit.net INFORMATION   Discovering: RaceDay.API.tests
+2026-10-16T09:05:49.9548259+00:00 xUnit.net INFORMATION   Discovered:  RaceDay.API.tests
+2026-10-16T09:05:50.0048843+00:00 xUnit.net INFORMATION   Starting:    RaceDay.API.tests
+2026-10-16T09:05:51.7637373+00:00 xUnit.net ERROR     RaceDay.Api.Tests.EnrolmentsControllerTests.CreateEnrolment_MissingCategory_ReturnsNotFound [FAIL]
+2026-10-16T09:05:51.7643883+00:00 xUnit.net INFORMATION       System.NullReferenceException : Object reference not set to an instance of an object.
+2026-10-16T09:05:51.7651842+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-10-16T09:05:51.7669766+00:00 xUnit.net INFORMATION         C:\Users\27725\source\repos\RaceDay\RaceDay.API\Controllers\EnorlmentsController.cs(30,0): at RaceDay.Api.Controllers.EnrolmentsController.CreateEnrolment(EnrolmentDTO dto)
+2026-10-16T09:05:51.7670162+00:00 xUnit.net INFORMATION         C:\Users\27725\source\repos\RaceDay\RaceDay.API.tests2\EnrolmentsControllerTests.cs(59,0): at RaceDay.Api.Tests.EnrolmentsControllerTests.CreateEnrolment_MissingCategory_ReturnsNotFound()
+2026-10-16T09:05:51.7670206+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-10-16T09:05:52.0429523+00:00 xUnit.net INFORMATION   Finished:    RaceDay.API.tests (ID = '009c5703923ff59a1bbaaee5500d1308c78dbac54cbecdc9bad6a1ebf8443d0b')
+2026-10-16T09:05:52.0520564+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-10-16T09:05:52.0647209+00:00 xUnit.net INFORMATION    RaceDay.API.tests  Total: 5, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 2.054s
