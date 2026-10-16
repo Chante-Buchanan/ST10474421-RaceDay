@@ -246,6 +246,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/8.0.31": {
         "type": "package",
         "dependencies": {
@@ -2219,6 +2235,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.8.0.31.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.0": {
+      "sha512": "/pT9FOO0BxGSRscK/ekEb6TdiP3+nnyhPLElE1yuVG/QaZLaBAuM3RoywBHdIxWoFALaOS7ktXlKzuMX3khJ4A==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.8.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.31": {
@@ -4590,6 +4620,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.31",
+      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.0",
       "Microsoft.NET.Test.Sdk >= 18.11.0",
       "RaceDay.API >= 1.0.0",
       "coverlet.collector >= 6.0.0",
@@ -4605,11 +4636,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\27725\\source\\repos\\RaceDay\\RaceDay.API.tests\\RaceDay.API.tests.csproj",
+      "projectUniqueName": "C:\\Users\\27725\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\ST10474421 RaceDay\\RaceDay\\RaceDay.API.tests\\RaceDay.API.tests.csproj",
       "projectName": "RaceDay.API.tests",
-      "projectPath": "C:\\Users\\27725\\source\\repos\\RaceDay\\RaceDay.API.tests\\RaceDay.API.tests.csproj",
+      "projectPath": "C:\\Users\\27725\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\ST10474421 RaceDay\\RaceDay\\RaceDay.API.tests\\RaceDay.API.tests.csproj",
       "packagesPath": "C:\\Users\\27725\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\27725\\source\\repos\\RaceDay\\RaceDay.API.tests\\obj\\",
+      "outputPath": "C:\\Users\\27725\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\ST10474421 RaceDay\\RaceDay\\RaceDay.API.tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4631,8 +4662,8 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\27725\\source\\repos\\RaceDay\\RaceDay.API\\RaceDay.API.csproj": {
-              "projectPath": "C:\\Users\\27725\\source\\repos\\RaceDay\\RaceDay.API\\RaceDay.API.csproj"
+            "C:\\Users\\27725\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\ST10474421 RaceDay\\RaceDay\\RaceDay.API\\RaceDay.API.csproj": {
+              "projectPath": "C:\\Users\\27725\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\ST10474421 RaceDay\\RaceDay\\RaceDay.API\\RaceDay.API.csproj"
             }
           }
         }
@@ -4657,6 +4688,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.31, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
