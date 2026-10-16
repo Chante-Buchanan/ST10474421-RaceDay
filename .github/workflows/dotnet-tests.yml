@@ -28,29 +28,26 @@ jobs:
         run: |
           set -e
 
-          test -f RaceDay.Api/RaceDay.Api.csproj || {
-            echo "::error::Missing RaceDay.Api/RaceDay.Api.csproj"
+          test -f RaceDay/RaceDay.API/RaceDay.API.csproj || {
+            echo "::error::Missing RaceDay/RaceDay.API/RaceDay.API.csproj"
             exit 1
           }
 
-          test -f RaceDay.Api.Tests/RaceDay.Api.Tests.csproj || {
-            echo "::error::Missing RaceDay.Api.Tests/RaceDay.Api.Tests.csproj"
+          test -f RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj || {
+            echo "::error::Missing RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj"
             exit 1
           }
 
           echo "Repository structure validated."
 
-      - name: Restore API dependencies
-        run: dotnet restore RaceDay.Api/RaceDay.Api.csproj
-
-      - name: Restore test dependencies
-        run: dotnet restore RaceDay.Api.Tests/RaceDay.Api.Tests.csproj
+      - name: Restore dependencies
+        run: dotnet restore RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj
 
       - name: Build API
-        run: dotnet build RaceDay.Api/RaceDay.Api.csproj --configuration Release --no-restore
+        run: dotnet build RaceDay/RaceDay.API/RaceDay.API.csproj --configuration Release
 
       - name: Build test project
-        run: dotnet build RaceDay.Api.Tests/RaceDay.Api.Tests.csproj --configuration Release --no-restore
+        run: dotnet build RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj --configuration Release
 
       - name: Run unit tests
-        run: dotnet test RaceDay.Api.Tests/RaceDay.Api.Tests.csproj --configuration Release --no-build --logger "console;verbosity=normal"
+        run: dotnet test RaceDay/RaceDay.API.tests/RaceDay.API.tests.csproj --configuration Release --no-build --logger "console;verbosity=normal"
